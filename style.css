@@ -1,6 +1,11 @@
 * {
     margin: 0px;
     padding: 0px;
+
+}
+
+body {
+    font-family: 'Roboto';
 }
 
 .container {
@@ -19,6 +24,16 @@
 
     display: grid;
     grid-template-rows: 50px 1fr 1fr;
+}
+
+.logo-img {
+    width: 2em;
+    height: 2em;
+}
+
+.menu-img {
+    width: 1em;
+    height: 1em;
 }
 
 .header {
