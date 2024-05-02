@@ -92,6 +92,29 @@ body {
     font-weight: bold;
 }
 
+.header .searchbar img {
+    margin-right: 10px;
+
+}
+
+.header .searchbar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header .searchbar input {
+    width: 80%;
+    height: 1.5em;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 7px;
+}
+
+.header .searchbar input:focus {
+    outline: 1px solid #1992d4;
+}
+
 .main {
     outline: 1px solid black;
     background-color: #e2e8f0;
