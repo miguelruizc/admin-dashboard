@@ -13,16 +13,13 @@ body {
 }
 
 .container {
-    border: 1px solid red;
-    background-color: aquamarine;
-    max-height: 100vh;
+    height: 100vh;
     display: grid;
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
-    outline: 1px solid black;
     background-color: #1992d4;
     grid-area: 1 / 1 / 3 / 2;
 
@@ -58,7 +55,6 @@ body {
 }
 
 .header {
-    outline: 1px solid black;
     background-color: #fff;
     grid-area: 1 / 2 / 2 / 3;
 
@@ -150,13 +146,21 @@ body {
 }
 
 .main {
-    outline: 1px solid black;
     background-color: #e2e8f0;
     grid-area: 2 / 2 / 3 / 3;
 
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 1fr; 
+    gap: 15px;
+
+    padding: 15px;
+}
+
+.main>div>p {
+    margin-bottom: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 .your-projects-outer {
@@ -164,15 +168,44 @@ body {
 }
 
 .your-projects-inner {
-    outline: 1px dotted black;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
 .project {
-    outline: 1px solid black;
     background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 100px 5px 0px -95px #f0b429;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project .project-text {
+    margin-left: 15px;
+}
+
+.project .project-text {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #737373;
+}
+
+.project .project-text .project-title{
+    font-weight: bold;
+    color: black;
+}
+
+.project .project-buttons {
+    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 15px;
 }
 
 .announcements-outer {
@@ -180,7 +213,6 @@ body {
 }
 
 .announcements-inner {
-    outline: 1px solid black;
     background-color: #fff;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -191,7 +223,6 @@ body {
 }
 
 .trending-inner {
-    outline: 1px solid black;
     background-color: #fff;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
