@@ -4,6 +4,10 @@
 
 }
 
+ul, li {
+    list-style: none;
+}
+
 body {
     font-family: 'Roboto';
 }
@@ -26,6 +30,13 @@ body {
     grid-template-rows: 50px 1fr 1fr;
 
     color: white;
+    padding: 15px;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo-img {
@@ -36,7 +47,14 @@ body {
 .menu-img {
     width: 1em;
     height: 1em;
-    fill: white;
+}
+
+.sidebar li > img {
+    margin-right: 15px;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
 }
 
 .header {
