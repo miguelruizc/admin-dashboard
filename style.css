@@ -193,13 +193,10 @@ body {
 }
 
 .project .project-text {
-    margin-left: 15px;
-}
-
-.project .project-text {
     font-size: 0.8em;
     font-weight: normal;
     color: #737373;
+    margin-left: 15px;
 }
 
 .project .project-text .project-title{
@@ -221,9 +218,28 @@ body {
 
 .announcements-inner {
     background-color: #fff;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.announcements-inner p {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #737373;
+}
+
+.announcements-inner hr {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0));
+}
+
+.announcements-inner .title {
+    font-weight: bold;
+    color: black;
 }
 
 .trending-outer {
@@ -235,6 +251,7 @@ body {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.1);
+    padding: 10px;
 }
 
 
